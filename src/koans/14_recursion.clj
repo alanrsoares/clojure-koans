@@ -19,10 +19,12 @@
     (cons (last coll)
           (recursive-reverse (butlast coll)))))
 
-(defn factorial [n]
-  (if (<= n 1)
-    n
-    (.abs (* n (factorial (- 1 n))))))
+(defn factorial [x]
+  (loop [n x
+         f 1]
+    (if (= 1 n)
+      f
+      (recur (dec n) (* f n)))))
 
 (meditations
   "Recursion ends with a base case"
