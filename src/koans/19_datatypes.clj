@@ -42,7 +42,7 @@
                 (Pulitzer. "music")]))
 
   "Either sort of datatype can define methods in a protocol"
-  (= "Congratulations on your Best Picture, "
+  (= "Congratulations on your Best Picture Oscar, Evil Alien Conquerors!"
      (with-out-str (present (Oscar. "Best Picture") "Evil Alien Conquerors")))
 
   "Surely we can implement our own by now"
